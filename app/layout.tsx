@@ -23,6 +23,9 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Rocket Visuals",
   description: "Transformo produtos comuns em conteúdos impossíveis de ignorar",
+  icons: {
+    icon: "/LOGO FOGUETE BRANCO.png",
+  },
 };
 
 export default function RootLayout({
@@ -32,7 +35,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} h-full antialiased scroll-smooth`}>
-      <head></head>
       <body className="min-h-full flex flex-col bg-black text-white">
         <AOSInit />
         <SmoothScroll />

@@ -32,9 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} h-full antialiased scroll-smooth`}>
-      <head>
-        <script src="https://assets.calendly.com/assets/external/widget.js"></script>
-      </head>
+      <head></head>
       <body className="min-h-full flex flex-col bg-black text-white">
         <AOSInit />
         <SmoothScroll />

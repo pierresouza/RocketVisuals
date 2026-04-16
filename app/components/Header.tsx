@@ -1,10 +1,6 @@
 "use client";
 
-import { useState } from "react";
-
 export function Header() {
-  const [activeId, setActiveId] = useState<string>("hero");
-
   const navItems = [
     { label: "Video Reel", id: "hero" },
     { label: "Sobre", id: "sobre" },
@@ -17,7 +13,6 @@ export function Header() {
   ];
 
   const handleNavClick = (id: string) => {
-    setActiveId(id);
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });

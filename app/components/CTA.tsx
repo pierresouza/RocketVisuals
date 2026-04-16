@@ -1,26 +1,8 @@
 "use client";
 
-import { useEffect } from "react";
-
-interface CalendlyWindow extends Window {
-  Calendly?: {
-    showPopupWidget: (url: string) => void;
-  };
-}
-
 export default function CTA() {
-  useEffect(() => {
-    // Carrega o widget do Calendly
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.head.appendChild(script);
-  }, []);
-
   const handleCalendlyClick = () => {
-    if (typeof window !== "undefined" && (window as CalendlyWindow).Calendly) {
-      (window as CalendlyWindow).Calendly?.showPopupWidget("https://calendly.com/rocketvisuals-vfx");
-    }
+    window.open("https://calendly.com/rocketvisuals-vfx", "_blank");
   };
 
   return (

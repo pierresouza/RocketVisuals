@@ -21,7 +21,9 @@ export default function Hero() {
         <div className="flex gap-6 flex-wrap justify-center">
           <button className="px-8 py-4 border-2 border-white text-white font-bold hover:bg-white hover:text-black transition-all duration-300 rounded-lg text-lg">VER PROJETOS</button>
           <button className="px-8 py-4 bg-linear-to-r from-blue-600 to-purple-600 text-white font-bold hover:shadow-lg hover:shadow-blue-600/50 transition-all duration-300 rounded-lg text-lg">
-            FALAR NO WHATSAPP
+            <a href="https://wa.me/5511930188184?text=Olá! Gostaria de saber mais sobre seus serviços de produção audiovisual e pacotes." target="_blank" rel="noopener noreferrer">
+              FALAR NO WHATSAPP
+            </a>
           </button>
         </div>
       </div>

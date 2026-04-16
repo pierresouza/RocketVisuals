@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
-import { Header } from "./components/Header";
 import { AOSInit } from "./components/AOSInit";
+import SmoothScroll from "./components/SmoothScroll";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -32,9 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} h-full antialiased scroll-smooth`}>
+      <head>
+        <script src="https://assets.calendly.com/assets/external/widget.js"></script>
+      </head>
       <body className="min-h-full flex flex-col bg-black text-white">
         <AOSInit />
-        <Header />
+        <SmoothScroll />
         {children}
       </body>
     </html>

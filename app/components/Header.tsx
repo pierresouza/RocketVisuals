@@ -25,12 +25,12 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-95 backdrop-blur-sm border-b border-gray-800">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md border-b border-gray-800/50">
       <nav className="w-full max-w-7xl mx-auto px-6 py-6 flex items-center justify-center gap-12">
-        <ul className="flex gap-8 flex-wrap justify-center items-center">
+        <ul className="flex gap-8 flex-wrap justify-center items-center ">
           {navItems.map((item) => (
             <li key={item.id}>
-              <button onClick={() => handleNavClick(item.id)} className="nav-link text-white font-bold text-lg hover:text-gray-300 transition-colors duration-300">
+              <button onClick={() => handleNavClick(item.id)} className="nav-link text-white font-bold text-lg hover:text-gray-300 transition-colors duration-300 cursor-pointer">
                 {item.label}
               </button>
             </li>

@@ -27,7 +27,7 @@ export default function Hero() {
         </div>
         <div className="max-w-2xl mx-auto">
           <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-300 text-center font-light">
-            Conteúdos cinematográficos com efeitos visuais e estratégias pensados para &nbsp;
+            Conteúdos cinemáticos com efeitos visuais e estratégias pensados para &nbsp;
             <span className="font-bold text-white">prender a atenção, gerar desejo e aumentar conversão.</span>
           </p>
           <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-300 text-center font-light">Mais do que comprar um vídeo bonito, você investe em soluções criativas que vendem por você.</p>

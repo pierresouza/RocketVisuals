@@ -19,31 +19,30 @@ export default function About() {
           </div>
         </div>
         <div className="flex-1" data-aos="fade-left">
-          <h2 className="text-5xl md:text-5xl font-black mb-8">QUEM ESTÁ POR TRÁS</h2>
+          <h2 className="text-5xl md:text-5xl font-black mb-8">A MENTE POR TRÁS</h2>
           <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-            Sou <span className="text-white font-bold">Gustavo Junior</span>, criador da Rocket Visuals. Com mais de 8 anos de experiência em produção audiovisual, transformei meu conhecimento em
-            impacto visual estratégico para marcas que querem se destacar.
+            <span className="text-white font-bold">Gustavo Junior</span>, criador da Rocket Visuals. Há mais de 8 anos produzindo conteúdos, com experiência no mercado corporativo, entendi uma coisa: Vídeo não é só conteúdo. É ferramenta de venda e posicionamento. Foi a partir disso que nasceu a Rocket Visuals. Hoje, desenvolvo soluções visuais estratégicas que aumentam percepção de valor, retenção e posicionamento de marcas. Unindo estética cinematográfica, efeitos visuais e estratégia, crio conteúdos que não passam despercebidos. Vídeos bonitos chamam atenção. Vídeos estratégicos geram resultado.
           </p>
           <div className="space-y-5">
             <div className="flex items-start">
-              <span className="text-blue-500 text-2xl mr-4 shrink-0">▸</span>
+              <span className="text-blue-500 text-2xl mr-4 shrink-0">▶</span>
               <div>
-                <h3 className="text-white font-bold text-lg">Diretor Criativo & Videomaker</h3>
-                <p className="text-gray-400 text-sm mt-1">Concepção visual de projetos audiovisuais de alto impacto</p>
+                <h3 className="text-white font-bold text-lg">Direção Criativa & Captação cinemática</h3>
+                <p className="text-gray-400 text-sm mt-1">Soluções pensados para capturar atenção e gerar impacto real</p>
               </div>
             </div>
             <div className="flex items-start">
-              <span className="text-purple-500 text-2xl mr-4 shrink-0">▸</span>
+              <span className="text-purple-500 text-2xl mr-4 shrink-0">▶</span>
               <div>
-                <h3 className="text-white font-bold text-lg">Especialista em VFX e Motion Design</h3>
-                <p className="text-gray-400 text-sm mt-1">Efeitos visuais que criam narrativas memoráveis</p>
+                <h3 className="text-white font-bold text-lg">Edição em VFX & Motion Design</h3>
+                <p className="text-gray-400 text-sm mt-1">Conteúdos que elevam a marca e criam posicionamento no mercado</p>
               </div>
             </div>
             <div className="flex items-start">
-              <span className="text-pink-500 text-2xl mr-4 shrink-0">▸</span>
+              <span className="text-pink-500 text-2xl mr-4 shrink-0">▶</span>
               <div>
                 <h3 className="text-white font-bold text-lg">Estratégia de Conteúdo para Marcas</h3>
-                <p className="text-gray-400 text-sm mt-1">Transformo estratégia criativa em resultados mensuráveis</p>
+                <p className="text-gray-400 text-sm mt-1">Vídeos que não são apenas posts — são ativos que geram resultado no longo prazo</p>
               </div>
             </div>
           </div>

@@ -4,21 +4,21 @@ export default function Portfolio() {
   const projects = [
     {
       title: "AUTOMOTIVO",
-      description: "Campanha de lançamento de veículo premium com efeitos VFX cinemáticos",
+      description: "Conteúdo que valoriza o produto e aumenta a percepção de valor",
       icon: "🏎️",
       color: "from-red-600 to-orange-600",
       tags: ["VFX 4K", "Motion Design", "3D"],
     },
     {
       title: "PRODUTO HERO",
-      description: "Filme comercial de produto com narrativa emocional e storytelling impactante",
+      description: "Vídeos criados para gerar desejo e aumentar a conversão",
       icon: "✨",
       color: "from-green-600 to-emerald-600",
       tags: ["Cinematografia", "Storytelling", "Edição"],
     },
     {
       title: "CRIATIVO IA",
-      description: "Geração de conteúdo criativo com IA + direção humana + edição profissional",
+      description: "Conteúdo escalável com alto impacto visual",
       icon: "🤖",
       color: "from-blue-600 to-indigo-600",
       tags: ["IA Criativa", "Automation", "Escalável"],

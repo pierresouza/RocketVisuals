@@ -7,10 +7,10 @@ interface Stat {
 
 export default function Stats() {
   const stats: Stat[] = [
-    { label: "Projetos Entregues", value: "+150" },
-    { label: "Clientes recorrentes", value: "+70%" },
-    { label: "performance que a média do perfil", value: "3x+" },
-    { label: "alcance no orgânico", value: "10x+" },
+    { label: "projetos entregues", value: "+150" },
+    { label: "clientes recorrentes. Marcas que voltam para novos projetos", value: "+70%" },
+    { label: "performance que a média do perfil", value: "3x +p" },
+    { label: "alcance no orgânico. Resultados baseados em projetos reais", value: "10x +" },
   ];
 
   return (

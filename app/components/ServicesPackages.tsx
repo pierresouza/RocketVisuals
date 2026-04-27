@@ -3,25 +3,25 @@
 export default function ServicesPackages() {
   const packages = [
     {
-      name: "STARTER",
-      subtitle: "Para começar",
-      features: ["1 Vídeo 30-60s", "Roteiro e Storyboard", "Gravação Profissional", "Edição e Cor", "2 Revisões"],
-      timeline: "2-3 semanas",
+      name: "STARTER (PRESENÇA)",
+      subtitle: "Para começar a gerar presença digital",
+      features: ["1 criativo", "Roteiro e storyboard", "1 revisão", "Produção e Pós produção cinemática", "1 post por IA"],
+      timeline: "2-5 dias",
       color: "blue",
     },
     {
-      name: "PROFESSIONAL",
-      subtitle: "Crescimento garantido",
-      features: ["3 Vídeos 30-90s", "Estratégia Criativa", "Produção Multi-Locação", "Edição + VFX", "Motion Graphics", "5 Revisões"],
-      timeline: "4-6 semanas",
+      name: "PROFESSIONAL (CRESCIMENTO)",
+      subtitle: "Para quem busca crescimento",
+      features: ["1 criativo Cinemático", "Roteiro e storyboard", "3 revisões", "1 Produção VFX", "1 post por IA", "Motion Graphics"],
+      timeline: "10-15 dias",
       color: "purple",
       popular: true,
     },
     {
-      name: "ENTERPRISE",
-      subtitle: "Transformação completa",
-      features: ["5+ Vídeos Customizados", "Consultoria Estratégica", "Produção com Equipamento Cinema", "VFX e 3D Avançado", "Sound Design Profissional", "Suporte Pós-Produção"],
-      timeline: "8-12 semanas",
+      name: "HERO PREMIUM",
+      subtitle: "Para dominar seu mercado",
+      features: ["1 criativo VFX PREMIUM", "Roteiro e storyboard", "5 revisões", "2 criativos cinemáticos", "2 Posts por IA", "Motion Graphics"],
+      timeline: "20-25 dias",
       color: "pink",
     },
   ];

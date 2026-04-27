@@ -2,11 +2,11 @@
 
 export default function Process() {
   const steps = [
-    { number: "1", title: "Briefing", color: "blue", description: "Conversamos sobre sua visão, objetivos, público-alvo e orçamento. Sem detalhes omitidos." },
-    { number: "2", title: "Direção Criativa", color: "purple", description: "Desenvolvimento da estratégia visual, roteiro, storyboard e conceituação do projeto." },
-    { number: "3", title: "Produção", color: "pink", description: "Filmagem em alta qualidade, gravação de conteúdo e captura de todos os elementos." },
-    { number: "4", title: "Pós Produção + VFX", color: "cyan", description: "Edição profissional, cor grading, efeitos visuais e sound design de qualidade cinema." },
-    { number: "5", title: "Entrega + Suporte", color: "green", description: "Projeto finalizado em todos os formatos. Suporte pós-lançamento e otimizações conforme necessário." },
+    { number: "1", title: "Briefing", color: "blue", description: "Conversamos sobre sua visão, objetivos, publico-alvo para ter um entendimento completo do seu negócio." },
+    { number: "2", title: "Direção Criativa", color: "purple", description: "Desenvolvimento da Estratégia visual, roteiro, storyboard e conceito do projeto." },
+    { number: "3", title: "Produção", color: "pink", description: "Captação pensada para impacto e VFX." },
+    { number: "4", title: "Pós + VFX", color: "cyan", description: "Refinamento visual e edição estratégica." },
+    { number: "5", title: "Entrega + Otimização", color: "green", description: "Conteúdo pronto para gerar resultado." },
   ];
 
   const colorMap = {

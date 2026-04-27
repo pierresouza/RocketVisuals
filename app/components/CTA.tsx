@@ -11,9 +11,8 @@ export default function CTA() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl -z-10"></div>
       <div className="w-full max-w-6xl mx-auto px-6" data-aos="fade-up">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-black mb-4">PRONTO PARA TRANSFORMAR?</h2>
-          <p className="text-xl text-gray-400 mb-2">Sua marca merece conteúdo que venda</p>
-          <p className="text-gray-500">Vamos conversar sobre como elevar sua estratégia de conteúdo ao próximo nível</p>
+          <h2 className="text-5xl md:text-6xl font-black mb-4 uppercase">Pronto para posicionar sua marca de verdade?</h2>
+          <p className="text-xl text-gray-400 mb-2">Sua marca precisa de conteúdo que chame atenção, gere desejo e construa percepção de valor.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -23,8 +22,8 @@ export default function CTA() {
             data-aos-delay="100"
           >
             <div className="text-4xl mb-4">💬</div>
-            <h3 className="text-xl font-bold text-white mb-3">Chat Rápido</h3>
-            <p className="text-gray-300 mb-6 flex-grow">Fale comigo diretamente no WhatsApp. Respondo em menos de 24h.</p>
+            <h3 className="text-xl font-bold text-white mb-3 uppercase">Fale direto comigo</h3>
+            <p className="text-gray-300 mb-6 grow">Me chama no Whatsapp e eu te explico como transformar seu conteúdo em posicionamento e resultado.</p>
             <a
               href="https://wa.me/5511930188184?text=Olá! Gostaria de saber mais sobre seus serviços de produção audiovisual e pacotes."
               target="_blank"
@@ -41,13 +40,13 @@ export default function CTA() {
             data-aos-delay="200"
           >
             <div className="text-4xl mb-4">📧</div>
-            <h3 className="text-xl font-bold text-white mb-3">Email Direto</h3>
-            <p className="text-gray-300 mb-6 flex-grow">Envie seus detalhes e propostas. Ótimo para briefings completos.</p>
+            <h3 className="text-xl font-bold text-white mb-3 uppercase">Envie seu projeto</h3>
+            <p className="text-gray-300 mb-6 grow">Ideal para quem já tem uma ideia e quer estruturar algo mais estratégico.</p>
             <a
               href="mailto:contato@rocketvisuals.com"
               className="block w-full py-4 px-6 bg-linear-to-r from-purple-500 to-pink-500 text-white font-bold text-center rounded-lg hover:shadow-lg hover:shadow-purple-600/50 transition-all duration-300 text-base uppercase tracking-wider"
             >
-              Enviar Email
+              Enviar Detalhes
             </a>
           </div>
 
@@ -57,8 +56,8 @@ export default function CTA() {
             data-aos-delay="300"
           >
             <div className="text-4xl mb-4">📞</div>
-            <h3 className="text-xl font-bold text-white mb-3">Consultoria Gratuita</h3>
-            <p className="text-gray-300 mb-6 flex-grow">Agende uma call de 30min para explorar seu projeto.</p>
+            <h3 className="text-xl font-bold text-white mb-3 uppercase">Diagnóstico estratégico</h3>
+            <p className="text-gray-300 mb-6 grow">Uma conversa rápida para entender seu cenário e definir o melhor caminho para sua marca no digital.</p>
             <button
               onClick={handleCalendlyClick}
               className="block w-full py-4 px-6 bg-linear-to-r from-pink-500 to-red-500 text-white font-bold text-center rounded-lg hover:shadow-lg hover:shadow-pink-600/50 transition-all duration-300 text-base uppercase tracking-wider cursor-pointer"
@@ -69,11 +68,15 @@ export default function CTA() {
         </div>
 
         <div className="bg-linear-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/50 rounded-xl p-12 text-center" data-aos="zoom-in">
-          <p className="text-2xl md:text-3xl font-black text-white mb-4">Não deixe sua marca invisível no feed</p>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Juntos, vamos criar conteúdo que não apenas chama atenção, mas que vende. A Rocket Visuals está pronta para levar sua marca ao próximo nível.
+          <p className="text-2xl md:text-3xl font-black text-white mb-4 uppercase">CONTEÚDO FRACO NÃO POSICIONA. SÓ OCUPA ESPAÇO</p>
+          <p className="text-gray-300 mb-4 max-w-2xl mx-auto">
+            A maioria das marcas posta vídeos. Poucas constroem presença.<br/>
+            O que diferencia não é frequência. É estratégia, estética e impacto alinhados.
           </p>
-          <p className="text-sm text-gray-400">⏱️ Respondo em menos de 24h • 🎬 Consultoria estratégica gratuita • ✅ Sem compromissos iniciais</p>
+          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+            A Rocket Visuals cria conteúdos que não apenas chamam atenção - mas fazem sua marca ser lembrada, desejada e valorizada.
+          </p>
+          <p className="text-lg font-bold text-white uppercase">Você não compra um vídeo. Você investe em como sua marca será percebida.</p>
         </div>
       </div>
     </section>

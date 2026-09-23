@@ -18,24 +18,28 @@ export default function Solution() {
       title: "Estética Cinemática",
       description: "Qualidade que prende a atenção e posiciona sua marca como premium.",
       image: "https://drive.google.com/file/d/1jYHgwarZ3RHOG9VOW63aNJWsCqC7ULnQ/view?usp=drive_link",
+      fallback: "/Hero-image.png",
       delay: "100",
     },
     {
       title: "Efeitos Visuais",
       description: "Diferenciação real que faz seu conteúdo se destacar.",
       image: "https://drive.google.com/uc?export=view&id=1ozONjJzuJVcbW1A4Os2kSEaDHkt4xXXW",
+      fallback: "/EFEITOS VISUAIS.png",
       delay: "200",
     },
     {
       title: "Narrativa Forte",
       description: "Storytelling pensado para gerar desejo.",
       image: "https://drive.google.com/uc?export=view&id=1qkIoLvSDfZd_5YwliIwxWRg9dEx-wN2l",
+      fallback: "/produção audiovisual.png",
       delay: "300",
     },
     {
       title: "Impacto Imediato",
       description: "Conteúdo pensado para converter, não só impressionar.",
       image: "https://drive.google.com/uc?export=view&id=1rg_2KMVw2ULLyYNu_8CjD6iWwb2yERVu",
+      fallback: "/3D.png",
       delay: "400",
     },
   ];
@@ -54,16 +58,18 @@ export default function Solution() {
               data-aos="fade-up"
               data-aos-delay={solution.delay}
             >
-              <Image
+              <img
                 src={toDriveImageUrl(solution.image)}
                 alt={solution.title}
-                fill
-                unoptimized
                 loading="lazy"
-                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw"
-                className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                onError={(e) => {
+                  if (e.currentTarget.src !== solution.fallback) {
+                    e.currentTarget.src = solution.fallback;
+                  }
+                }}
+                className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-black via-black/35 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black via-black/35 to-transparent pointer-events-none" />
               <div className="absolute inset-x-0 bottom-0 p-5 md:p-6">
                 <div className="max-w-md space-y-3">
                   <div className="inline-flex items-center rounded-full border border-white/15 bg-black/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.28em] text-white/70 backdrop-blur-sm">

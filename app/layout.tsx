@@ -34,8 +34,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} h-full antialiased scroll-smooth`}>
-      <body className="min-h-full flex flex-col bg-black text-white">
+    <html
+      lang="pt-BR"
+      suppressHydrationWarning
+      className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} h-full antialiased scroll-smooth`}
+    >
+      <body suppressHydrationWarning className="min-h-full flex flex-col bg-black text-white">
         <AOSInit />
         <SmoothScroll />
         {children}

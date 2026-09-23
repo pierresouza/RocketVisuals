@@ -2,6 +2,7 @@
 
 import "aos/dist/aos.css";
 import { Header } from "./components/Header";
+import VideoReel from "./components/VideoReel";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
 import About from "./components/About";
@@ -22,6 +23,7 @@ export default function Home() {
   return (
     <main>
       <Header />
+      <VideoReel />
       <Hero />
       <Stats />
       <About />

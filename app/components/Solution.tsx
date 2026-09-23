@@ -2,12 +2,22 @@
 
 import Image from "next/image";
 
+function toDriveImageUrl(url: string) {
+  const fileId = url.match(/\/d\/([^/]+)/)?.[1] ?? url.match(/[?&]id=([^&]+)/)?.[1];
+
+  if (!fileId) {
+    return url;
+  }
+
+  return `https://drive.google.com/thumbnail?id=${fileId}&sz=w2000`;
+}
+
 export default function Solution() {
   const solutions = [
     {
       title: "Estética Cinemática",
       description: "Qualidade que prende a atenção e posiciona sua marca como premium.",
-      image: "https://drive.google.com/uc?export=view&id=1FKoZnSffRtxy91W_6fM74I7g1uOzNXCR",
+      image: "https://drive.google.com/file/d/1jYHgwarZ3RHOG9VOW63aNJWsCqC7ULnQ/view?usp=drive_link",
       delay: "100",
     },
     {
@@ -45,7 +55,7 @@ export default function Solution() {
               data-aos-delay={solution.delay}
             >
               <Image
-                src={solution.image}
+                src={toDriveImageUrl(solution.image)}
                 alt={solution.title}
                 fill
                 unoptimized

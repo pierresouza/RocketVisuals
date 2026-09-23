@@ -2,7 +2,7 @@
 
 export function Header() {
   const navItems = [
-    { label: "Video Reel", id: "hero" },
+    { label: "Video Reel", id: "reel" },
     { label: "Sobre", id: "sobre" },
     { label: "Problema", id: "problema" },
     { label: "Solução", id: "solucao" },

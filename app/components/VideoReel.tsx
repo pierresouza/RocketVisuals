@@ -1,6 +1,22 @@
 "use client";
 
+import { useState, useEffect } from "react";
+
 export default function VideoReel() {
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [mounted, setMounted] = useState<boolean>(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+    return () => window.removeEventListener("resize", checkIsMobile);
+  }, []);
+
   const handleScrollToHero = () => {
     const el = document.getElementById("hero");
     if (el) {
@@ -8,31 +24,73 @@ export default function VideoReel() {
     }
   };
 
+  // Video IDs
+  const desktopVideoId = "siMzw7ScHNk";
+  const mobileVideoId = "mgEvRGmIvOU";
+
+  const activeVideoId = isMobile ? mobileVideoId : desktopVideoId;
+
   return (
     <section
       id="reel"
-      className="relative w-full h-[70vh] md:h-[88vh] lg:h-screen overflow-hidden bg-black flex items-end justify-center !pt-0"
+      className="relative w-full h-[80vh] min-h-[560px] md:min-h-0 md:h-[88vh] lg:h-screen overflow-hidden bg-black flex items-end justify-center !pt-0"
     >
       {/* Background YouTube Video Reel without overlapping text */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <iframe
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            width: "100vw",
-            height: "100vh",
-            minWidth: "177.78vh",
-            minHeight: "56.25vw",
-            transform: "translate(-50%, -50%)",
-            border: 0,
-          }}
-          className="pointer-events-none scale-105"
-          src="https://www.youtube.com/embed/siMzw7ScHNk?autoplay=1&mute=1&loop=1&playlist=siMzw7ScHNk&controls=0&showinfo=0&rel=0&iv_load_policy=3&disablekb=1&modestbranding=1&playsinline=1"
-          title="Rocket Visuals Demo Reel 2026"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          tabIndex={-1}
-        />
+        {/* Poster fallback before hydration */}
+        {!mounted && (
+          <>
+            <div
+              className="md:hidden absolute inset-0 bg-cover bg-center"
+              style={{
+                backgroundImage: `url('https://i.ytimg.com/vi/${mobileVideoId}/hqdefault.jpg')`,
+              }}
+            />
+            <div
+              className="hidden md:block absolute inset-0 bg-cover bg-center"
+              style={{
+                backgroundImage: `url('https://i.ytimg.com/vi/${desktopVideoId}/maxresdefault.jpg')`,
+              }}
+            />
+          </>
+        )}
+
+        {/* Responsive YouTube Embed */}
+        {mounted && (
+          <iframe
+            key={activeVideoId}
+            style={
+              isMobile
+                ? {
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    width: "100vw",
+                    height: "177.78vw",
+                    minWidth: "56.25vh",
+                    minHeight: "100vh",
+                    transform: "translate(-50%, -50%)",
+                    border: 0,
+                  }
+                : {
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    width: "100vw",
+                    height: "100vh",
+                    minWidth: "177.78vh",
+                    minHeight: "56.25vw",
+                    transform: "translate(-50%, -50%)",
+                    border: 0,
+                  }
+            }
+            className="pointer-events-none scale-105"
+            src={`https://www.youtube.com/embed/${activeVideoId}?autoplay=1&mute=1&loop=1&playlist=${activeVideoId}&controls=0&showinfo=0&rel=0&iv_load_policy=3&disablekb=1&modestbranding=1&playsinline=1`}
+            title={isMobile ? "Rocket Visuals Demo Reel 2026 Mobile" : "Rocket Visuals Demo Reel 2026"}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            tabIndex={-1}
+          />
+        )}
       </div>
 
       {/* Subtle top shade for header contrast */}
